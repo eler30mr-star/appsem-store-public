@@ -1,0 +1,17 @@
+export const categories = [
+  { key: "all", label: "Todas" },
+  { key: "bible", label: "Biblia" },
+  { key: "christian", label: "Cristiana" },
+  { key: "tools", label: "Herramientas" },
+  { key: "education", label: "Educación" },
+  { key: "entertainment", label: "Entretenimiento" },
+  { key: "productivity", label: "Productividad" },
+  { key: "lifestyle", label: "Estilo de vida" },
+  { key: "games", label: "Juegos" },
+  { key: "other", label: "Otros" }
+];
+
+export const categoryMap = categories.reduce((map, category) => {
+  map[category.key] = category.label;
+  return map;
+}, {});
